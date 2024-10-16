@@ -1,6 +1,6 @@
 class Solution:
     def findRelativeRanks(self, score: List[int]) -> List[str]:
-        temp = [x for x in score] 
+        temp = score.copy()
         c=0
         while len(temp)!=0:
             val = max(temp)
