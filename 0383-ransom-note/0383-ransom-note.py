@@ -5,10 +5,8 @@ class Solution:
             if i in note:
                 note[note.index(i)]=True
         for i in range(len(note)):
-            if note[i] is not True:
-                note[i]=False
-        print(note)
-        if all(note):
-            return True
-        else:
-            return False
+            if note[i] is True:
+                pass
+            else:
+                return False
+        return True
