@@ -8,7 +8,7 @@ class Solution:
                 d[s[i]]=1
         for i in range(len(s)):
             if d[s[i]]==1:
-                return s.index(s[i])
+                return i
         return -1
         
         
