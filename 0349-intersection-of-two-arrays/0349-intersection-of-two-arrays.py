@@ -3,10 +3,10 @@ class Solution:
         nums1 = list(set(nums1))
         nums = list(set(nums1)).copy()
         nums2 = list(set(nums2))
+        l=[]
         for i in nums1:
             if i in nums2:
-                continue
-            else:
-                nums.remove(i)
-        return nums
+                l.append(i)
+            
+        return l
         
