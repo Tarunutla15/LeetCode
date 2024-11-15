@@ -1,16 +1,8 @@
 
 class Solution:
     def largestNumber(self, nums: List[int]) -> str:
-        
-        for i,val in enumerate(nums):
-            nums[i]=str(val)
-        def compare(n1,n2):
-            if n1+n2>n2+n1:
-                return -1
-            else:
-                return 1
-        nums = sorted(nums,key=cmp_to_key(compare))
-      
+        nums = list(map(str,nums))
+        nums.sort(key=lambda x : x*10 ,reverse=True)
         return str(int("".join(nums)))
 
 
