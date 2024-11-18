@@ -4,8 +4,6 @@ class Solution:
         s1=''
         for word in s.split():
             d[int(word[-1])]=word[:-1]
-        for i in range(1,len(s.split())+1):
-            s1+=d[i]+' '
-        print(s1)
-        return s1[:-1]
-        
+        sent = " ".join([d[i+1] for i in range(len(s.split()))])
+        print(sent)
+        return sent
