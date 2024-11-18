@@ -7,5 +7,5 @@ class Solution:
         for i in range(1,len(s.split())+1):
             s1+=d[i]+' '
         print(s1)
-        return s1.strip()
+        return s1[:-1]
         
